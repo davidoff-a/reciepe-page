@@ -1,0 +1,30 @@
+.header {
+  padding: 52px 0 24px 0;
+  &__title {
+    margin-bottom: 12px;
+    font-family: $ffHeading;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4em;
+    line-height: 133%;
+    color: $main-text;
+  }
+  &__descr {
+    width: 529px;
+    height: 52px;
+    margin-top: 12px;
+    font-family: $ffNormal;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 120%;
+    color: $accent-text;
+    margin-bottom: 50px;
+  }
+
+  &__img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
