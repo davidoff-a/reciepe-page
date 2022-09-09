@@ -2,6 +2,10 @@
   padding: 48px 0;
   &__ingredients {
   }
+  &__specs {
+
+
+  }
   &__title {
     margin-bottom: 2em;
     font-family: $ffHeading;
@@ -13,6 +17,7 @@
   }
 
   &__subtitle {
+    margin-bottom: 30px;
     font-family: $ffHeading;
     font-style: italic;
     font-weight: 400;
@@ -22,8 +27,11 @@
   }
 
   .list {
+    margin-bottom: 30px;
     &__item {
       margin-bottom: 12px;
+      margin-left: 47px;
+      position: relative;
       font-family: $ffNormal;
       font-style: normal;
       font-weight: 400;
@@ -32,6 +40,37 @@
       color: $title-color;
       & span {
         font-weight: 700;
+      }
+      &::before {
+        content: "";
+        width: 21px;
+        height: 21px;
+        position: absolute;
+        top: 0;
+        left: -47px;
+        border: 1px solid $list-bullet;
+        border-radius: 3px;
+      }
+      &.number {
+        margin-left: 51px;
+        counter-increment: my-awesome-counter;
+        margin-bottom: 30px;
+        &:before {
+          content: counter(my-awesome-counter);
+          width: 36px;
+          height: 36px;
+          position: absolute;
+          top: 0;
+          left: -51px;
+          color: $bg-color;
+          font-size: 24px;
+          line-height: 29px;
+          text-align: center;
+          font-family: $ffHeading;
+          border: none;
+          border-radius: $brad;
+          background-color: $accent-color;
+        }
       }
     }
   }

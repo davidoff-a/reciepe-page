@@ -13,6 +13,8 @@
     width: 529px;
     height: 52px;
     margin-top: 12px;
+    margin-left: 30px;
+    position: relative;
     font-family: $ffNormal;
     font-style: italic;
     font-weight: 500;
@@ -20,9 +22,19 @@
     line-height: 120%;
     color: $accent-text;
     margin-bottom: 50px;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -25px;
+      width: 16px;
+      height: 10px;
+      transform: translateY(-50%);
+      background: url("../assets/6dots.svg") center center/cover no-repeat;
+    }
   }
 
-  &__img{
+  &__img {
     width: 100%;
     height: auto;
     object-fit: cover;

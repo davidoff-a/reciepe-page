@@ -1,0 +1,48 @@
+.specs {
+  width: 216px;
+  height: 367px;
+  padding: 50px 44px;
+  border-radius: $brad;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    &:first-child {
+
+    }
+  }
+  &__descr {
+    width: 80px;
+    &:first-child .specs__value {
+      color: $accent-color;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__header {
+    margin-bottom: 8px;
+    font-family: $ffNormal;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: $specs-header;
+  }
+  &__value {
+    font-family: $ffNormal;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $title-color;
+  }
+}
+.marker {
+  width: 28px;
+  height: 28px;
+  background: url("../assets/clock.svg") center center/cover no-repeat;
+}
