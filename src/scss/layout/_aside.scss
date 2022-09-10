@@ -10,14 +10,16 @@
     align-items: flex-start;
     margin-bottom: 30px;
     &:first-child {
-
+      & .specs__value {
+        color: $accent-color;
+      }
+      & .marker{
+        background: url('../assets/fork.svg') center center/cover no-repeat;
+      }
     }
   }
   &__descr {
     width: 80px;
-    &:first-child .specs__value {
-      color: $accent-color;
-    }
     &:last-child {
       margin-bottom: 0;
     }

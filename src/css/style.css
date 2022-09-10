@@ -278,11 +278,14 @@ body {
   align-items: flex-start;
   margin-bottom: 30px;
 }
+.specs__item:first-child .specs__value {
+  color: #f2994a;
+}
+.specs__item:first-child .marker {
+  background: url("../assets/fork.svg") center center/cover no-repeat;
+}
 .specs__descr {
   width: 80px;
-}
-.specs__descr:first-child .specs__value {
-  color: #f2994a;
 }
 .specs__descr:last-child {
   margin-bottom: 0;
